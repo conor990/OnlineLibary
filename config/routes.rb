@@ -17,5 +17,6 @@ Rails.application.routes.draw do
   get 'home', to: 'site#home'
   get 'gbooks', to: 'site#gbooks'
   get 'contributors', to: 'site#contributors'
+  get 'destroy_contributor_session_path', to 
  # get 'book', to: 'books#book'
 end

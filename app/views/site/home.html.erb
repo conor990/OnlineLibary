@@ -22,16 +22,14 @@
             <div class="col-sm-6"> 
                 <div class="list-group">
 
-                <a href="/books" class="list-group-item list-group-item-action list-group-item-light">All Books &nbsp;&nbsp;&nbsp;&nbsp;></a>
-                     <a href="/search" class="list-group-item list-group-item-action list-group-item-dark">All Book Categories &nbsp;&nbsp;&nbsp;&nbsp; ></a>
-                    <a href="/books/new" class="list-group-item list-group-item-action list-group-item-light">Add Books &nbsp;&nbsp;&nbsp;&nbsp;></a>
-                    <a href="/gbooks" class="list-group-item list-group-item-action list-group-item-dark"> Trending Books &nbsp;&nbsp;&nbsp;&nbsp; ></a>
+                   <%= render "shared/homeTable" %>
                 </div>
             </div>
          </div>
       </div>
 
-      
+  
+      <%= render "shared/footer" %>
 	<script src="index.js"></script>
   </body>
 </html>
