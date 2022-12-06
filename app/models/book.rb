@@ -1,4 +1,7 @@
 class Book < ApplicationRecord
+    belongs_to :contributor
+
+
     validates_presence_of :title, :author, :description
 
     validates_length_of :description,      

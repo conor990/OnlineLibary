@@ -5,6 +5,11 @@
         <div class="col-sm-8">
             <h1>Hello &nbsp;<%= @contributors.email%></h1>
 
+            <% @contributor_books.each do |book|%>
+                <%= link_to book.title, book_path(book) %> <br>
+            <% end %>
+
+
         </div>
         <div class="col-sm-2"></div>
     </div>
