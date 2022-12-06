@@ -24,7 +24,4 @@ class SiteController < ApplicationController
     @book4 = @response[3]["name"]
   end 
 
-  def contributors
-    @user = User.find(params[:id])
-  end
 end

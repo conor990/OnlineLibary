@@ -23,11 +23,9 @@
         <a class="nav-link" href="contributors/sign_up">Sign in </a>
       </li>
 
-    <li class="">
-      <a class="nav-link" href="destroy_contributor_session_path">Log out </a>
-    </li>
+      <%= link_to "Sign out", destroy_contributor_session_path, 'data-turbo-method': :delete, class: 'nav-link' %>
 
-    <%= link_to "Sign out", destroy_contributor_session_path, 'data-turbo-method': :delete, class: 'nav-link' %>
+
 
 
     </ul>
