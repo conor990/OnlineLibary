@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'contributors/show'
+
   devise_for :contributors
+  get 'contributors/show'
   resources :books
   resources :contributors
   #get 'site/home'
@@ -18,7 +19,7 @@ Rails.application.routes.draw do
   get 'search', to: 'site#search'
   get 'home', to: 'site#home'
   get 'gbooks', to: 'site#gbooks'
-  get 'contributors/:id', to: 'contributors#show'
+  get 'contributors/:id', to: 'contributors#show', as: :contributors_showbooks
   #get 'contributors/sign_out', to: 'devise/sessions#destroy'
  # get 'book', to: 'books#book'
 end

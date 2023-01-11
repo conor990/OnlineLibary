@@ -54,6 +54,7 @@ gem 'googlebooks', '~> 0.0.9' #google books gem
 
 gem 'httparty'
 
+gem 'bundler'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

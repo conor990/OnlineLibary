@@ -1,8 +1,10 @@
 class ContributorsController < ApplicationController
   def show
-    @contributors = Contributor.find(params[:id])
-    @contributor_books = @contributors.books
+    @contributor = Contributor.find_by(id: params[:id])
+    if @contributor.nil?
+       render 'not_found'
+    else
+       @contributor_books = @contributor.books
+    end
   end
-
-
 end

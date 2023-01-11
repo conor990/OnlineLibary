@@ -1,13 +1,36 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Books</h1>
+
+<div class="row"> 
+  <div class="col-sm-3"> </div>
+  <div class="col-sm-6"> 
+  <h1>Books</h1>
+  </div>
+  <div class="col-sm-3"> </div>
+  
+</div>
+
+
+
+
 
 <div id="books">
   <% @books.each do |book| %>
     <%= render book %>
+
+    <div class="row"> 
+    <div class="col-sm-3"> </div>
+    <div class="col-sm-6"> 
     <p>
-      <%= link_to "Show this book", book %>
-    </p>
+    <%= link_to "Show this book", book %>
+  </p>
+    </div>
+    <div class="col-sm-3"> </div>
+    
+  </div>
+
+
+
   <% end %>
 </div>
 
