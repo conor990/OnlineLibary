@@ -25,3 +25,7 @@ class SiteController < ApplicationController
   end 
 
 end
+
+
+#HTTParty gem is used to make a GET request to simple books API's, parse the response body and assigns it to the instance variable @response.
+

@@ -1,18 +1,12 @@
 Rails.application.routes.draw do
 
-  devise_for :contributors
-  get 'contributors/show'
-  resources :books
+  devise_for :contributors #sets up the routes for the Devise gem, which is used for authentication and authorization in the application.
+  get 'contributors/show'  #sets up a route for the contributors#show action in the ContributorsController. When a user navigates to the /contributors/show URL, the show action in the ContributorsController will be executed.
+  resources :books  #This sets up a set of routes for the Books resource.
   resources :contributors
-  #get 'site/home'
- # get 'site/about'
-  #get 'site/contact'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-
-  root to: 'site#home'
+  root to: 'site#home' #sets home page
 
   get 'about', to: 'site#about'
   get 'contact', to: 'site#contact'
